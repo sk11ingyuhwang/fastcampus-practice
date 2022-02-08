@@ -17,7 +17,7 @@ public class MainController {
     }
 
     @GetMapping("/")
-    public String main(@RequestParam List<String> list) {
-        return stringSortService.doSort(list).toString();
+    public List<String> main(@RequestParam List<String> list) {
+        return stringSortService.doSort(list);
     }
 }
