@@ -1,9 +1,13 @@
-package logic;
+package com.fastcampus.practice.logic;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Primary
+@Component
 public class BubbleSort <T extends Comparable<T>> implements Sort<T> {
 
     @Override
